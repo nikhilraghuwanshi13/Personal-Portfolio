@@ -16,7 +16,7 @@ This portfolio is designed to help **recruiters and hiring managers** quickly un
 ## 🚀 Live Demo
 
 🔗 **Portfolio Live Link:**  
-👉 https://nikhilraghuwanshi13.github.io/your-repo-name/
+👉 https://nikhilraghuwanshi13.github.io/Personal-Portfolio/
 
 ---
 
@@ -83,9 +83,7 @@ https://nikhilraghuwanshi13.github.io/Text-To-Speech-Project/
 
 ---
 
-## 📸 Preview
 
-![Portfolio Preview](./assets/preview.png)
 
 
 ## 🔐 Security Note
