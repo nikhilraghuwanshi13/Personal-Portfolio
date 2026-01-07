@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>Nikhil Raghuwanshi | Software Developer</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>NR</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="section-content">
+                <div class="home-content">
+                    <!-- Profile Image Section -->
+                    <div class="profile-image-container">
+                       <img src="/files/assets/cartoon image.jpg" alt="Nikhil Raghuwanshi" class="profile-image">
+                    </div>
+                    
+                    <div>
+                        <h2>Nikhil Raghuwanshi</h2>
+                        <p class="role">Software Developer | Frontend Enthusiast</p>
+                        <p class="tagline">
+                            Passionate fresher developer with hands-on experience in building web applications. 
+                            Strong foundation in JavaScript, HTML, CSS, and problem-solving. 
+                            Eager to contribute to innovative projects and grow with a dynamic team.
+                        </p>
+                        <a href="#contact" class="cta-button">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Nikhil Raghuwanshi, a motivated software developer from India. 
+                            My journey into programming began with curiosity about how websites work, 
+                            which led me to explore HTML, CSS, and JavaScript.
+                        </p>
+                        <p>
+                            I believe in learning by building. Through self-learning and hands-on projects, 
+                            I've developed practical skills in frontend development and problem-solving. 
+                            I'm comfortable working with modern tools like Git and leveraging AI tools 
+                            to enhance productivity.
+                        </p>
+                        <p>
+                            I'm actively seeking opportunities with companies like TCS, Infosys, Wipro, 
+                            Accenture, and product-based startups where I can apply my skills, learn 
+                            from experienced professionals, and contribute to meaningful projects.
+                        </p>
+                    </div>
+                    <div class="highlights">
+                        <h3>What Drives Me</h3>
+                        <ul>
+                            <li>Building user-friendly web applications</li>
+                            <li>Solving real-world problems through code</li>
+                            <li>Continuous learning and skill development</li>
+                            <li>Collaborating with teams on innovative projects</li>
+                            <li>Writing clean, maintainable code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-content">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">
+                            Capable of building responsive, interactive websites with modern layouts and animations.
+                        </p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Programming & Logic</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript (Core)</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python (Basics)</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Problem Solving</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">
+                            Understanding of algorithms, data structures, and logical thinking to solve coding challenges.
+                        </p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AI Tools (ChatGPT, Claude)</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.95rem;">
+                            Proficient in version control, code collaboration, and leveraging AI for debugging and learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Virtual Assistant</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Web APIs</span>
+                        </div>
+                        <div class="project-description">
+                            A voice-controlled web application that responds to user commands. 
+                            Users can ask questions, get time/date information, search the web, 
+                            and perform basic tasks through voice commands.
+                        </div>
+                        <div class="project-logic">
+                            <h4>How It Works:</h4>
+                            <ul>
+                                <li>Uses Web Speech API to capture voice input</li>
+                                <li>Converts speech to text using speech recognition</li>
+                                <li>Processes commands using conditional logic</li>
+                                <li>Responds with text-to-speech output</li>
+                                <li>Integrates with search engines for queries</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nikhilraghuwanshi13/Virtual-Assistant---ai" target="_blank" class="project-link github">
+                                <span>💻</span> View Code
+                            </a>
+                            <a href="https://nikhilraghuwanshi13.github.io/Virtual-Assistant---ai/" target="_blank" class="project-link">
+                                <span>🚀</span> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Text-to-Speech Web App</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Speech API</span>
+                        </div>
+                        <div class="project-description">
+                            An interactive web application that converts written text into spoken words. 
+                            Features include multiple voice options, speed control, and a clean interface 
+                            for easy text input.
+                        </div>
+                        <div class="project-logic">
+                            <h4>How It Works:</h4>
+                            <ul>
+                                <li>Takes text input from user through textarea</li>
+                                <li>Uses browser's Speech Synthesis API</li>
+                                <li>Allows selection of different voices and languages</li>
+                                <li>Controls speech rate and pitch dynamically</li>
+                                <li>Provides play, pause, and stop controls</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nikhilraghuwanshi13/Text-To-Speech-Project" target="_blank" class="project-link github">
+                                <span>💻</span> View Code
+                            </a>
+                            <a href="https://nikhilraghuwanshi13.github.io/Text-To-Speech-Project/" target="_blank" class="project-link">
+                                <span> 🚀</span> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="resume">
+        <div class="container">
+            <div class="section-content">
+                <h2>Resume Summary</h2>
+                <div class="resume-content">
+                    <div class="resume-section">
+                        <h3>Professional Summary</h3>
+                        <p>
+                            Enthusiastic and detail-oriented software developer fresher with strong foundation 
+                            in frontend technologies and problem-solving. Hands-on experience building web 
+                            applications using JavaScript, HTML, and CSS. Quick learner with passion for 
+                            creating user-friendly digital solutions. Seeking to leverage technical skills 
+                            and creativity in a dynamic development team.
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <p>
+                            <strong>B.Tech</strong> in Computer Science & Engineering <br>
+                            Shivajirao Kadam Institute of Technology & Management (Autonomous)<br>
+                            Sep 2022 - Present | Indore
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Key Strengths</h3>
+                        <ul style="padding-left: 2rem; line-height: 2;">
+                            <li>Frontend Development (HTML, CSS, JavaScript)</li>
+                            <li>Web APIs and Browser Technologies</li>
+                            <li>Web Development, Python Programming, Responsive Desig</li>
+                            <li>Problem Solving and Logical Thinking </li>
+                            <li>Software: VS Code, Jupyter Notebook</li>
+                            <li>Self-Learning and Adaptability</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Certifications & Learning</h3>
+                        <p>
+                            <b>Frontend Development</b> – Debugshala<br>
+                            Completed a hands-on frontend development course covering HTML, CSS, JavaScript, and responsive design principles
+                        </p>
+                    </div>
+
+                    <a href="#" class="download-btn" onclick="alert('No Full Resume Because Of Security Purpose'); return false;">
+                        Download Full Resume (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-content">
+                <h2>Get In Touch</h2>
+                <p style="margin-top: 1rem; font-size: 1.1rem;">
+                    I'm actively looking for opportunities and would love to connect!
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilraghuwanshi1010@gmail.com" target="_blank">nikhilraghuwanshi1010@gmail.com</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Drop me a message anytime</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>💼 LinkedIn</h3>
+                         <a href="https://www.linkedin.com/in/nikhil-raghuwanshi1312" target="_blank">linkedin.com/in/nikhil-raghuwanshi1312</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Let's connect professionally</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>💻 GitHub</h3>
+                        <a href="https://github.com/nikhilraghuwanshi13" target="_blank">github.com/nikhilraghuwanshi13</a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Check out my code</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📍 Location</h3>
+                        <p><strong>India</strong></p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Open to relocation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nikhil Raghuwanshi. Built with passion and code.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed to showcase skills for recruiters and hiring managers</p>
+        </div>
+    </footer>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
