@@ -17,7 +17,6 @@ This portfolio is designed to help **recruiters and hiring managers** quickly un
 
 🔗 **Portfolio Live Link:**  
 👉 https://nikhilraghuwanshi13.github.io/Personal-Portfolio/
-
 ---
 
 ## 🛠️ Tech Stack
